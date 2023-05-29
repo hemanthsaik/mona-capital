@@ -1,21 +1,12 @@
+import Link from "next/link";
 import React from "react";
 
 const Metamask = () => {
   return (
-    <div
-      style={{
-        border: "0.5px solid #ccc",
-        display: "inline-block",
-        textAlign: "center",
-        margin: "10px",
-        padding: "20px",
-        fontSize: "20px",
-      }}
-    >
+    <div className="flex min-h-screen flex-col gap-3 justify-center items-center">
       <p>
-        {" "}
         It apprears that Metamask is not installed, <br />
-        Download <a href="https://metamask.io/">Metamask</a> to continue.
+        Download <Link href="https://metamask.io/">Metamask</Link> to continue.
       </p>
     </div>
   );
